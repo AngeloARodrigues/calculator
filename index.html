@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="calculator-body">
+
+                <div class="btn_container">
+                    <div class="display-holder">
+                        <p class="display" id="calc-display"></p>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn" onclick="addParentheses(document.getElementById('parentheses1').innerText)" id="parentheses1">(</button>
+                        <button class="btn" onclick="addParentheses(document.getElementById('parentheses2').innerText)" id="parentheses2">)</button>
+                        <button class="btn" onclick="clean()" id="c">C</button>
+                        <button class="btn" onclick="backSpace()" id="del"><</button>
+                        
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn" onclick="addNum(1)" id="1">1</button>
+                        <button class="btn" onclick="addNum(2)" id="2">2</button>
+                        <button class="btn" onclick="addNum(3)" id="3">3</button>
+                        <button id="plus" onclick="addSign('+')">+</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn" onclick="addNum(4)" id="4">4</button>
+                        <button class="btn" onclick="addNum(5)" id="5">5</button>
+                        <button class="btn" onclick="addNum(6)" id="6">6</button>
+                        <button id="minus" onclick="addSign('-')" id="">-</button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn" onclick="addNum(7)" id="7">7</button>
+                        <button class="btn" onclick="addNum(8)" id="8">8</button>
+                        <button class="btn" onclick="addNum(9)" id="9">9</button>
+                        <button id="times" onclick="addSign('*')"><span>*</span></button>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn" onclick="addDot()" id="dot">.</button>
+                        <button class="btn" onclick="addNum(0)" id="0">0</button>
+                        <button class="btn" id="iqual" onclick="result()">=</button>
+                        <button id="divide" onclick="addSign('/')">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
